@@ -1,0 +1,89 @@
+/* RESET */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+/* TITULOS */
+h1, h2, h3 {
+    color: red;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* MAIN con GRID (Mobile First) */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* SECTION */
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ASIDE */
+aside {
+    background: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* IMAGEN */
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+/* 📲 TABLET */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* 💻 ESCRITORIO */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+#btnArriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btnArriba:hover {
+    background: rgb(87, 94, 184);
+}
